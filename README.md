@@ -1,10 +1,15 @@
-This project was bootstrapped with [Create React App](https://github.com/facebookincubator/create-react-app).
+# Shop react workshop exercises
+
+To learn and experiment with React this small project was created.
+[Workshop exercises](#workshop-exercises) explain tasks that have to be carried out.
+
+This project was bootstrapped with [Create React App](https://github.com/facebookincubator/create-react-app). Most of the documentation in this applies to that. 
 
 Below you will find some information on how to perform common tasks.<br>
 You can find the most recent version of this guide [here](https://github.com/facebookincubator/create-react-app/blob/master/packages/react-scripts/template/README.md).
 
 ## Table of Contents
-
+- [Workshop exercises](#workshop-exercises)
 - [Updating to New Releases](#updating-to-new-releases)
 - [Sending Feedback](#sending-feedback)
 - [Folder Structure](#folder-structure)
@@ -94,6 +99,11 @@ You can find the most recent version of this guide [here](https://github.com/fac
   - [`npm run build` fails to minify](#npm-run-build-fails-to-minify)
   - [Moment.js locales are missing](#momentjs-locales-are-missing)
 - [Something Missing?](#something-missing)
+
+
+## Workshop exercises
+
+TODO write it up
 
 ## Updating to New Releases
 
