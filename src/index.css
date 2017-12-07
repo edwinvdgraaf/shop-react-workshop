@@ -31,6 +31,21 @@ html {
   grid-column: 1 / -1;
   grid-row: 1;
   background-color: #f6f3ed;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.header__col {
+  padding: 1em;
+}
+
+.header__basket {
+  background: #ffc723;
+  text-align: middle;
+  border: 0;
+  border-radius: 0;
+  padding: 1em;
 }
 
 .shopping-cart {
