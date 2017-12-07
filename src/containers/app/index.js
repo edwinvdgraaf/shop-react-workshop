@@ -1,15 +1,31 @@
 import React, { Component } from 'react';
+import Header from '../../components/header';
+import Basket from '../../components/basket';
+import ProductTile from '../../components/product-tile';
+
+import mockedProducts from './products.json';
 
 class App extends Component {
+
+  constructor() {
+    super();
+
+    this.state = {
+      products: mockedProducts,
+      basket: []
+    }
+  }
+
   render() {
+    const { products, basket } = this.state;
+
     return (
       <div className="app">
-        <header className="App-header">
-          <h1 className="App-title">Welcome to React</h1>
-        </header>
-        <p className="App-intro">
-          To get started, edit <code>src/App.js</code> and save to reload.
-        </p>
+        <Header />
+        <div className="container main">
+          <ProductTile />
+        </div>
+        <Basket />
       </div>
     );
   }
