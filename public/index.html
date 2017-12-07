@@ -20,6 +20,119 @@
       Learn how to configure a non-root public URL by running `npm run build`.
     -->
     <title>React App</title>
+    <style>
+      @import url("https://fonts.googleapis.com/css?family=Domine:700|Open+Sans:400,700");
+      body,
+      html {
+        font-family: 'Open Sans', sans-serif;
+        color: #31312f;
+        font-size: .875em;
+        line-height: 1.5;
+      }
+
+      .page-wrapper {
+        display: grid;
+        grid-template-columns: auto 15em;
+        grid-template-rows: 8em 15em auto 8em;
+        grid-gap: 3px;
+        padding: 3px;
+        background-color: #fff;
+        height: 100vh;
+        max-width: 1200px;
+        margin: 0 auto;
+      }
+
+      .logo {
+        height: 40%;
+        width: 250px;
+      }
+
+      .header {
+        grid-column: 1 / -1;
+        grid-row: 1;
+        background-color: #f6f3ed;
+      }
+
+      .shopping-cart {
+        padding: 1em;
+        grid-column: 1 / -1;
+        grid-row: 2;
+        background-color: #f6f3ed;
+      }
+      .shopping-cart__title {
+        margin-bottom: 1em;
+      }
+
+      .main {
+        grid-column: 1 / -1;
+        grid-row: 3;
+        padding: 5em 0;
+        display: grid;
+        grid-gap: 20px;
+        grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
+      }
+
+      .footer {
+        grid-column: 1 / -1;
+        grid-row: 4;
+        background-color: #f6f3ed;
+      }
+
+      .flex-center {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        width: 100%;
+        height: 100%;
+      }
+
+      .flex-left {
+        display: flex;
+        align-items: center;
+        justify-content: flex-start;
+        width: 100%;
+        height: 100%;
+      }
+
+      @media screen and (min-width: 640px) {
+        .main {
+          grid-column: 1 / 2;
+          grid-row: 2 / 4;
+        }
+
+        .shopping-cart {
+          grid-column: 2 / 3;
+          grid-row: 2 / 4;
+        }
+      }
+      .product {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+      }
+      .product--shopping-cart {
+        border: 1px solid #b1b1ae;
+        border-radius: 4px;
+        padding: 1em;
+        margin-bottom: 1em;
+      }
+      .product__image, .product__title, .product__price {
+        margin-bottom: 1em;
+      }
+      .product__title {
+        font-weight: 700;
+      }
+      .product__price {
+        font-family: 'Domine', serif;
+        line-height: initial;
+        color: #d12c2a;
+        font-size: 1.7857em;
+      }
+      .product__price--fraction {
+        font-size: .6em;
+        margin-left: -2px;
+      }
+    </style>
   </head>
   <body>
     <noscript>

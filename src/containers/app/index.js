@@ -20,12 +20,15 @@ class App extends Component {
     const { products, basket } = this.state;
 
     return (
-      <div className="app">
+      <div className="page-wrapper">
         <Header />
-        <div className="container main">
+        <div className="main">
           <ProductTile />
         </div>
         <Basket />
+        <div className="footer">
+          <div className="flex-center">Footer</div>
+        </div>
       </div>
     );
   }
