@@ -1,13 +1,12 @@
-import fs from 'fs';
-import path from 'path';
 import { shallow, mount } from 'enzyme';
 import React from 'react';
 import App from './containers/app';
 
 const ENABLE_EXERCISE_1 = false;
-const ENABLE_EXERCISE_2 = true;
+const ENABLE_EXERCISE_2 = false;
+const ENABLE_EXERCISE_3 = false;
 
-const mockProducts = JSON.parse(fs.readFileSync(path.join(__dirname, './containers/app/products.json')));
+import mockProducts from './containers/app/products.json';
 
 it('jest wants atleast one test', () => {});
 
@@ -48,5 +47,16 @@ if (ENABLE_EXERCISE_2) {
       app.find('.main').find('.product').first().find('button').simulate('click');
       expect(app.find('.product--shopping-cart').exists()).toBe(true);
     });
+  });
+}
+
+if (ENABLE_EXERCISE_3) {
+  it('removes product from basket', () => {
+    const app = mount(<App basket={[1]} />);
+
+    app.find('.product--shopping-cart button').first().simulate('click');
+
+    expect(app.find('.main .product button').first().getDOMNode().disabled).toBe(false);
+    expect(app.find('.product--shopping-cart').exists()).toBe(false);
   });
 }

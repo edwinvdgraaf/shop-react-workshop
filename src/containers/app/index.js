@@ -6,14 +6,13 @@ import ProductTile from '../../components/product-tile';
 import mockedProducts from './products.json';
 
 class App extends Component {
-
-  constructor() {
+  constructor(props) {
     super();
 
     this.state = {
       products: mockedProducts,
-      basket: []
-    }
+      basket: props.basket || [],
+    };
   }
 
   render() {
