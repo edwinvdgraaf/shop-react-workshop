@@ -108,7 +108,20 @@ You can find the most recent version of this guide [here](https://github.com/fac
 You can start the development server with `$ npm start` and run the tests 
 with `$ npm run test`. Happy coding! 😄🎉
 
+### Optional (TTD flow)
+
+In `src/workshop-exercises.js` you'll find a few premade test, which can help
+you thrue the exercises flip the booleans at the top to enable each test
+at a time. So change `const ENABLE_EXERCISE_1 = false;` to `const ENABLE_EXERCISE_1 = true;`.
+
 ### Exercises
+
+1. First we start with building our product list. The template and css for a product is already made as well as the layout that will display multiple products. If you start up you app you will already see one product rendered. Your job is to make sure it renders all products from the json.
+1. In the second assignment we add the logic for adding a product to the basket/shopping-cart. When you click the add to basket button the button should be disabled and the product should be added to the basket.
+1. Make sure the basket/shopping-cart has a remove product functionality. A shopping cart removal should enable the buy button for that product.
+1. Add a basket-button/icon to the header which displays the number of products in the basket.
+1. Add functionality to the basket that allows to change the number of products in the basket of a particular product. Changing the amount should change the total number of products in the basket as displayed by the basket button in the header.
+1. Add Redux to this app to take care of the state management.
 
 ## Updating to New Releases
 
