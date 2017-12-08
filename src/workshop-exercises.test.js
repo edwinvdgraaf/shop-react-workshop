@@ -5,6 +5,7 @@ import App from './containers/app';
 const ENABLE_EXERCISE_1 = false;
 const ENABLE_EXERCISE_2 = false;
 const ENABLE_EXERCISE_3 = false;
+const ENABLE_EXERCISE_4 = false;
 
 import mockProducts from './containers/app/products.json';
 
@@ -62,5 +63,19 @@ if (ENABLE_EXERCISE_3) {
 
     expect(app.find('.main .product button').first().getDOMNode().disabled).toBe(false);
     expect(app.find('.product--shopping-cart').exists()).toBe(false);
+  });
+}
+
+if(ENABLE_EXERCISE_4) {
+  it('updates the basket header', () => {
+    const app = mount(<App />);
+
+    expect(app.find('.header__basket').text().match("0")).toBeTruthy();
+
+    app.setState({
+      basket: [1]
+    });
+
+    expect(app.find('.header__basket').text().match("1")).toBeTruthy();
   });
 }
