@@ -11,7 +11,7 @@ class App extends Component {
 
     this.state = {
       products: mockedProducts,
-      basket: props.basket || [],
+      basket: [],
     };
   }
 

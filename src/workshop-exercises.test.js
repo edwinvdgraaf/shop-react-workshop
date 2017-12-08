@@ -52,7 +52,11 @@ if (ENABLE_EXERCISE_2) {
 
 if (ENABLE_EXERCISE_3) {
   it('removes product from basket', () => {
-    const app = mount(<App basket={[1]} />);
+    const app = mount(<App />);
+
+    app.setState({
+      basket: [1]
+    })
 
     app.find('.product--shopping-cart button').first().simulate('click');
 
