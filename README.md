@@ -103,7 +103,12 @@ You can find the most recent version of this guide [here](https://github.com/fac
 
 ## Workshop exercises
 
-TODO write it up
+### Getting started
+
+You can start the development server with `$ npm start` and run the tests 
+with `$ npm run test`. Happy coding! 😄🎉
+
+### Exercises
 
 ## Updating to New Releases
 
