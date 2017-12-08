@@ -9,7 +9,7 @@ const ENABLE_EXERCISE_4 = false;
 
 import mockProducts from './containers/app/products.json';
 
-it('jest wants atleast one test', () => {});
+it('jest wants atleast one test ❤ ', () => {});
 
 if (ENABLE_EXERCISE_1) {
   it('renders all products', () => {
