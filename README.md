@@ -104,7 +104,7 @@ You can find the most recent version of this guide [here](https://github.com/fac
 ## Workshop exercises
 
 ### Getting started
-
+Install the dependencies with `$ npm install`.
 You can start the development server with `$ npm start` and run the tests 
 with `$ npm run test`. Happy coding! 😄🎉
 
