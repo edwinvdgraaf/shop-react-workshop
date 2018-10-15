@@ -23,7 +23,7 @@ if (ENABLE_EXERCISE_1) {
           </div>
           <div className="product__party">{ p.subTitle }</div>
           <div className="product__title">{ p.title }</div>
-          <div className="product__price"> { price },<sup className="product__price product__price--fraction">{ fraction }</sup></div>
+          <div className="product__price">{ price },<sup className="product__price product__price--fraction">{ fraction }</sup></div>
           <button>In winkelwagentje</button>
         </div>
       )).toBe(true);

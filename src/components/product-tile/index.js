@@ -9,7 +9,7 @@ class ProductTile extends Component {
         </div>
         <div className="product__party">Samsung</div>
         <div className="product__title">Samsung UE55MU7000 - 4K tv</div>
-        <div className="product__price"> 95,<sup className="product__price product__price--fraction">99</sup></div>
+        <div className="product__price">95,<sup className="product__price product__price--fraction">99</sup></div>
         <button>In winkelwagentje</button>
       </div>
     );
