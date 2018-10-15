@@ -22,7 +22,7 @@ class App extends Component {
       <div className="page-wrapper">
         <Header />
         <div className="main">
-          <ProductTile />
+          { products.map(product => <ProductTile key={product.globalId} {...product} />) }
         </div>
         <Basket />
         <div className="footer">

@@ -1,15 +1,24 @@
 import React, { Component } from 'react';
 
+function getPriceDecimals(price) {
+  return price.split(",")[0];
+}
+
+function getPriceCents(price) {
+  return price.split(",")[1];
+}
+
 class ProductTile extends Component {
   render() {
+    const { title, globalId, imageUrl, price, subTitle } = this.props;
     return (
       <div className="product">
         <div className="product__image">
-          <img src="//s.s-bol.com/imgbase0/imagebase3/regular/FC/5/6/7/6/9200000075776765.jpg" alt="Samsung UE55MU7000 - 4K tv" />
+          <img src={ imageUrl } alt={ title } />
         </div>
-        <div className="product__party">Samsung</div>
-        <div className="product__title">Samsung UE55MU7000 - 4K tv</div>
-        <div className="product__price">95,<sup className="product__price product__price--fraction">99</sup></div>
+        <div className="product__party">{ subTitle }</div>
+        <div className="product__title">{ title }</div>
+        <div className="product__price">{ getPriceDecimals(price) },<sup className="product__price product__price--fraction">{ getPriceCents(price) }</sup></div>
         <button>In winkelwagentje</button>
       </div>
     );
