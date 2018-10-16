@@ -18,11 +18,13 @@ class App extends Component {
   render() {
     const { products, basket } = this.state;
 
+    const productElement = products.map(p => <ProductTile product={p}/>)
+
     return (
       <div className="page-wrapper">
         <Header />
         <div className="main">
-          <ProductTile />
+            {productElement}
         </div>
         <Basket />
         <div className="footer">
