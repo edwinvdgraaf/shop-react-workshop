@@ -4,5 +4,5 @@ import Basket from '../basket';
 
 it('renders without crashing', () => {
   const div = document.createElement('div');
-  ReactDOM.render(<Basket />, div);
+  ReactDOM.render(<Basket basket={[]}/>, div);
 });

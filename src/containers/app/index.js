@@ -13,6 +13,14 @@ class App extends Component {
       products: mockedProducts,
       basket: [],
     };
+
+    this.addToBasket = this.addToBasket.bind(this);
+  }
+
+  addToBasket(productId) {
+    this.setState({
+      basket: this.state.basket.concat(productId)
+    });
   }
 
   render() {
@@ -22,9 +30,12 @@ class App extends Component {
       <div className="page-wrapper">
         <Header />
         <div className="main">
-          { products.map(product => <ProductTile key={product.globalId} {...product} />) }
+          { products.map(product => <ProductTile 
+            key={product.globalId} 
+            {...product}
+            addToBasket={ this.addToBasket } />) }
         </div>
-        <Basket />
+        <Basket basket={ basket } products={ products } />
         <div className="footer">
           <div className="flex-center">Footer</div>
         </div>

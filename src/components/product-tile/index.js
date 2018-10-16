@@ -10,7 +10,8 @@ function getPriceCents(price) {
 
 class ProductTile extends Component {
   render() {
-    const { title, globalId, imageUrl, price, subTitle } = this.props;
+    const { title, globalId, imageUrl, price, subTitle, addToBasket } = this.props;
+
     return (
       <div className="product">
         <div className="product__image">
@@ -19,7 +20,7 @@ class ProductTile extends Component {
         <div className="product__party">{ subTitle }</div>
         <div className="product__title">{ title }</div>
         <div className="product__price">{ getPriceDecimals(price) },<sup className="product__price product__price--fraction">{ getPriceCents(price) }</sup></div>
-        <button>In winkelwagentje</button>
+        <button onClick={addToBasket}>In winkelwagentje</button>
       </div>
     );
   }
