@@ -23,11 +23,11 @@ class App extends Component {
             product={product}
             disabledBtn={basket.includes(product)}
             addToBasket={this.addToBasket.bind(this)}
-        />)
+        />);
 
         return (
             <div className="page-wrapper">
-                <Header/>
+                <Header basketSize={basket.length}/>
                 <div className="main">
                     {productElements}
                 </div>
@@ -49,9 +49,7 @@ class App extends Component {
 
     removeFromBasket(product) {
         this.setState((state) => {
-            const tempBasket = state.basket.slice(0);
-            delete tempBasket[tempBasket.indexOf(product)]
-            return {basket: tempBasket}
+            return {basket: state.basket.filter(p => p !== product)};
         })
     }
 }

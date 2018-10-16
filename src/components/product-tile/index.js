@@ -2,6 +2,7 @@ import React, {Component} from 'react';
 
 class ProductTile extends Component {
     render() {
+        //const {subTitle, title, imageUrl, price} = this.props;
         const p = this.props.product;
         const [euro, cent] = p.price.split(",");
         return (

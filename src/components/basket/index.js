@@ -2,7 +2,8 @@ import React, {Component} from 'react';
 
 class Basket extends Component {
     render() {
-        const itemsInBasket = this.props.products.map(product => <BTile product={product} removeFromBasket={this.props.removeFromBasket.bind(this)}/>)
+        const itemsInBasket = this.props.products.map(product =>
+            <BTile product={product} removeFromBasket={this.props.removeFromBasket}/>)
 
         return <div className="shopping-cart">
             {itemsInBasket}
