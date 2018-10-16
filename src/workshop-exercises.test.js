@@ -2,7 +2,7 @@ import { shallow, mount } from 'enzyme';
 import React from 'react';
 import App from './containers/app';
 
-const ENABLE_EXERCISE_1 = false;
+const ENABLE_EXERCISE_1 = true;
 const ENABLE_EXERCISE_2 = false;
 const ENABLE_EXERCISE_3 = false;
 const ENABLE_EXERCISE_4 = false;
