@@ -10,7 +10,7 @@ class Header extends Component {
         </div>
         <div className="header__col">
           <div className="header__basket">
-            <img src={BasketSvg} alt="Basket" width={16} height={16} /> Basket (0)
+            <img src={BasketSvg} alt="Basket" width={16} height={16} /> Basket ({this.props.basketSize})
           </div>
         </div>
       </div>
