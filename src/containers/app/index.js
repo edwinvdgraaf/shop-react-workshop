@@ -18,6 +18,8 @@ class App extends Component {
   render() {
     const { products, basket } = this.state;
 
+    console.log('We have the following products', products);
+
     return (
       <div className="page-wrapper">
         <Header />

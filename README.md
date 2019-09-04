@@ -121,7 +121,6 @@ at a time. So change `const ENABLE_EXERCISE_1 = false;` to `const ENABLE_EXERCIS
 1. Make sure the basket/shopping-cart has a remove product functionality. A shopping cart removal should enable the buy button for that product.
 1. Add a basket-button/icon to the header which displays the number of products in the basket.
 1. Add functionality to the basket that allows to change the number of products in the basket of a particular product. Changing the amount should change the total number of products in the basket as displayed by the basket button in the header.
-1. Add Redux to this app to take care of the state management.
 
 ## Updating to New Releases
 
